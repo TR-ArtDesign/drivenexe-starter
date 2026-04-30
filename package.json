@@ -1,0 +1,16 @@
+{
+  "name": "drivenexe",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "echo 'define dev command'",
+    "build": "echo 'define build command'",
+    "lint:docs": "node scripts/lint-docs.js",
+    "validate": "bun run lint:docs",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1"
+  }
+}
