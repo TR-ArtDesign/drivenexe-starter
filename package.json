@@ -7,8 +7,8 @@
     "dev": "echo 'define dev command'",
     "build": "echo 'define build command'",
     "lint:docs": "node scripts/lint-docs.js",
-    "validate": "bun run lint:docs",
-    "test:e2e": "playwright test"
+    "validate": "bun run scripts/lint-docs.js",
+    "test:e2e": "bunx playwright test"
   },
   "devDependencies": {
     "@playwright/test": "^1.59.1"

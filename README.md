@@ -7,3 +7,17 @@ Structured project starter with:
 * testing
 * CI
 * agent integration
+
+## Runtime
+
+This project uses **bun** as the primary runtime.
+
+Commands:
+
+```bash
+bun install
+bun run validate
+bun run test:e2e
+```
+
+npm is not required.

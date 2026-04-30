@@ -1,14 +1,17 @@
-# CURRENT ROADMAP
+# CURRENT SPRINT
 
 ## 🎯 Objective
 
-Define the current working cycle.
+Validate the development system itself.
 
 ---
 
 ## 🧩 Tasks
 
-* [ ] Initial setup
+* [ ] Validate lint behavior
+* [ ] Validate Playwright execution
+* [ ] Validate CI pipeline
+* [ ] Validate pre-commit hook
 
 ---
 
