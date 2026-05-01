@@ -1,4 +1,4 @@
-export default function Hero() {
+export default function Hero({ t }) {
   return (
     <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
       {/* Background Glows */}
@@ -11,18 +11,16 @@ export default function Hero() {
         {/* Left Side: Content */}
         <div className="relative z-10 animate-fade-left">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold mb-6">
-            <span>DRIVENEXE 1.0</span>
+            <span>{t.badge}</span>
           </div>
           
           <h1 className="text-6xl md:text-8xl font-bold text-white tracking-tighter leading-[0.9] mb-8">
-            Stop starting <br />
-            <span className="text-slate-500">from scratch.</span>
+            {t.headline_1} <br />
+            <span className="text-slate-500">{t.headline_2}</span>
           </h1>
           
           <p className="text-lg md:text-xl text-slate-400 max-w-lg mb-10 leading-relaxed font-medium">
-            DrivenEXE is the orchestrator for high-performance engineers. 
-            A structured, orchestrated foundation that enforces validation and 
-            scale from day one.
+            {t.subheadline}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-5">
@@ -30,13 +28,13 @@ export default function Hero() {
               href="https://github.com/TR-ArtDesign/drivenexe-starter" 
               className="px-8 py-4 bg-blue-600 text-white rounded-xl font-bold text-lg shadow-[0_0_25px_rgba(37,99,235,0.4)] hover:bg-blue-500 transition-all text-center"
             >
-              Start with structure
+              {t.cta_primary}
             </a>
             <a 
               href="https://github.com/TR-ArtDesign/drivenexe-starter" 
               className="px-8 py-4 bg-transparent text-white border border-white/10 rounded-xl font-bold text-lg hover:bg-white/5 transition-all text-center"
             >
-              View repository
+              {t.cta_secondary}
             </a>
           </div>
         </div>
@@ -60,7 +58,6 @@ export default function Hero() {
               </div>
             </div>
             
-            {/* Floating UI Element */}
             <div className="absolute -top-6 -right-6 p-4 bg-blue-600 rounded-2xl shadow-2xl border border-white/20 animate-float">
                <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>

@@ -1,22 +1,22 @@
-const steps = [
-  {
-    num: "01",
-    title: "Clone & Initialize",
-    desc: "Start with a deterministic foundation instead of a blank slate."
-  },
-  {
-    num: "02",
-    title: "Configure & Validate",
-    desc: "Enforce system integrity with built-in linting and structure checks."
-  },
-  {
-    num: "03",
-    title: "Execute via SKILL",
-    desc: "Follow the guided system to maintain consistency throughout the lifecycle."
-  }
-];
+export default function HowItWorks({ t }) {
+  const steps = [
+    {
+      num: "01",
+      title: t.s1_title,
+      desc: t.s1_desc
+    },
+    {
+      num: "02",
+      title: t.s2_title,
+      desc: t.s2_desc
+    },
+    {
+      num: "03",
+      title: t.s3_title,
+      desc: t.s3_desc
+    }
+  ];
 
-export default function HowItWorks() {
   return (
     <section id="workflow" className="py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">

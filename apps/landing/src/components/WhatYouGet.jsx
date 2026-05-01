@@ -1,35 +1,34 @@
-const items = [
-  {
-    title: "Structured Foundation",
-    description: "A battle-tested folder architecture designed for multi-platform scalability (Web + Mobile).",
-    icon: <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/></svg>
-  },
-  {
-    title: "Built-in Validation",
-    description: "Documentation linting and structural integrity checks integrated into your Git workflow.",
-    icon: <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-  },
-  {
-    title: "Guided Execution",
-    description: "The SKILL.md assistant transforms manual setup into a deterministic, step-by-step process.",
-    icon: <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-  },
-  {
-    title: "Multi-Platform Ready",
-    description: "Pre-configured isolation for Web (Playwright) and Mobile (Maestro) testing strategies.",
-    icon: <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><line x1="12" x2="12" y1="18" y2="18"/></svg>
-  }
-];
+export default function WhatYouGet({ t }) {
+  const items = [
+    {
+      title: t.f1_title,
+      description: t.f1_desc,
+      icon: <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/></svg>
+    },
+    {
+      title: t.f2_title,
+      description: t.f2_desc,
+      icon: <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    },
+    {
+      title: t.f3_title,
+      description: t.f3_desc,
+      icon: <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+    },
+    {
+      title: t.f4_title,
+      description: t.f4_desc,
+      icon: <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><line x1="12" x2="12" y1="18" y2="18"/></svg>
+    }
+  ];
 
-export default function WhatYouGet() {
   return (
     <section id="features" className="py-32 bg-slate-900/20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20 animate-fade-up">
-          <h2 className="text-4xl font-bold text-white mb-6 tracking-tighter">Everything you need. <br />Nothing you don't.</h2>
+          <h2 className="text-4xl font-bold text-white mb-6 tracking-tighter" dangerouslySetInnerHTML={{ __html: t.headline }} />
           <p className="text-slate-500 max-w-xl mx-auto text-lg font-medium">
-            We removed the boilerplate and focused on the orchestration. 
-            A system designed to be lean, fast, and unyielding.
+            {t.subheadline}
           </p>
         </div>
 
