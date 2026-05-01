@@ -29,13 +29,7 @@ export default function Navbar({ t, toggleLang, lang }) {
           <a 
             href="https://github.com/TR-ArtDesign/drivenexe-starter" 
             target="_blank" 
-            className="hidden sm:block text-sm font-medium text-slate-400 hover:text-white transition-colors"
-          >
-            {t.signin}
-          </a>
-          <a 
-            href="https://github.com/TR-ArtDesign/drivenexe-starter" 
-            target="_blank" 
+            rel="noopener noreferrer"
             className="bg-white text-black px-4 py-1.5 rounded-full text-sm font-bold hover:bg-slate-200 transition-all"
           >
             {t.clone}
