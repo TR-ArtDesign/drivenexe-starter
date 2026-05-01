@@ -3,8 +3,8 @@ export default function Navbar({ t, toggleLang, lang }) {
     <nav className="fixed top-0 w-full z-50 border-b border-white/5 bg-slate-950/60 backdrop-blur-xl animate-fade-up">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(37,99,235,0.4)]">
-            <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="m5 15 3-3.5L12 14l3.5-3 4.5 4.5V4l-11 1 1 11Z"/></svg>
+          <div className="w-8 h-8 flex items-center justify-center overflow-hidden rounded-lg shadow-[0_0_15px_rgba(37,99,235,0.4)]">
+            <img src="/iconApp.png" alt="DrivenEXE Logo" className="w-full h-full object-cover" />
           </div>
           <span className="text-lg font-bold tracking-tighter text-white">DrivenEXE</span>
         </div>

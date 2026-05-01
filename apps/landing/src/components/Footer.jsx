@@ -4,8 +4,8 @@ export default function Footer({ t }) {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
         <div className="col-span-2">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-6 h-6 bg-blue-600 rounded flex items-center justify-center">
-               <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="m5 15 3-3.5L12 14l3.5-3 4.5 4.5V4l-11 1 1 11Z"/></svg>
+            <div className="w-6 h-6 flex items-center justify-center overflow-hidden rounded">
+               <img src="/iconApp.png" alt="DrivenEXE Logo" className="w-full h-full object-cover" />
             </div>
             <span className="text-lg font-bold tracking-tighter text-white">DrivenEXE</span>
           </div>
