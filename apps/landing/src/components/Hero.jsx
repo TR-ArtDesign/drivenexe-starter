@@ -1,69 +1,101 @@
+import { motion } from 'framer-motion';
+
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-20 overflow-hidden">
-      {/* Background Decorative Elements */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10">
-        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-600/20 rounded-full blur-[120px]" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-600/20 rounded-full blur-[120px]" />
+    <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
+      {/* Background Glows */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        <div className="absolute top-[20%] left-[10%] w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px]" />
+        <div className="absolute bottom-[20%] right-[10%] w-[400px] h-[400px] bg-indigo-600/10 rounded-full blur-[120px]" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/50 border border-slate-700 text-blue-400 text-xs font-medium mb-8 animate-fade-in">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-          <span>v1.0.0 está disponível agora</span>
-        </div>
-        
-        <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight leading-tight">
-          A fundação sólida para o seu <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">
-            Próximo Grande Projeto
-          </span>
-        </h1>
-        
-        <p className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-          DrivenEXE é um sistema de inicialização orquestrado que combina validação rigorosa, 
-          automação de testes e escalabilidade para engenheiros de elite.
-        </p>
-
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-          <a 
-            href="https://github.com/TR-ArtDesign/drivenexe-starter" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 active:scale-95"
-          >
-            Começar Agora 
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          </a>
-          <a 
-            href="https://github.com/TR-ArtDesign/drivenexe-starter#readme" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-xl font-bold text-lg border border-slate-700 transition-all"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg>
-            Ver Documentação
-          </a>
-        </div>
-
-        {/* Mockup / Visual Element */}
-        <div className="relative max-w-4xl mx-auto rounded-2xl border border-slate-700 bg-slate-800/50 p-4 shadow-2xl backdrop-blur-sm">
-          <div className="flex items-center gap-2 mb-4 px-2">
-            <div className="w-3 h-3 rounded-full bg-red-500/50" />
-            <div className="w-3 h-3 rounded-full bg-yellow-500/50" />
-            <div className="w-3 h-3 rounded-full bg-green-500/50" />
+      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+        {/* Left Side: Content */}
+        <motion.div 
+          initial={{ x: -50, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="relative z-10"
+        >
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold mb-6">
+            <span>DRIVENEXE 1.0</span>
           </div>
-          <div className="bg-slate-900 rounded-lg p-6 font-mono text-left text-sm overflow-hidden border border-slate-800">
-            <div className="text-blue-400">$ bun run validate</div>
-            <div className="text-slate-300">--- Documentation Lint ---</div>
-            <div className="text-green-400">Checking: maintenance.md ... OK</div>
-            <div className="text-green-400">Checking: roadmap-current.md ... OK</div>
-            <div className="text-slate-300">--- System Structure Validation ---</div>
-            <div className="text-blue-400">[OK] Testing strategy detected: Web Mobile</div>
-            <div className="text-green-500 mt-2">Summary: 0 errors, 0 warnings</div>
-            <div className="animate-pulse inline-block w-2 h-4 bg-blue-400 ml-1 translate-y-0.5" />
+          
+          <h1 className="text-6xl md:text-8xl font-bold text-white tracking-tighter leading-[0.9] mb-8">
+            Stop starting <br />
+            <span className="text-slate-500">from scratch.</span>
+          </h1>
+          
+          <p className="text-lg md:text-xl text-slate-400 max-w-lg mb-10 leading-relaxed font-medium">
+            DrivenEXE is the orchestrator for high-performance engineers. 
+            A structured, orchestrated foundation that enforces validation and 
+            scale from day one.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-5">
+            <a 
+              href="https://github.com/TR-ArtDesign/drivenexe-starter" 
+              className="px-8 py-4 bg-blue-600 text-white rounded-xl font-bold text-lg shadow-[0_0_25px_rgba(37,99,235,0.4)] hover:bg-blue-500 transition-all text-center"
+            >
+              Start with structure
+            </a>
+            <a 
+              href="https://github.com/TR-ArtDesign/drivenexe-starter" 
+              className="px-8 py-4 bg-transparent text-white border border-white/10 rounded-xl font-bold text-lg hover:bg-white/5 transition-all text-center"
+            >
+              View repository
+            </a>
           </div>
-        </div>
+        </motion.div>
+
+        {/* Right Side: Visual Element */}
+        <motion.div 
+          initial={{ scale: 0.8, opacity: 0, rotateY: 20 }}
+          animate={{ scale: 1, opacity: 1, rotateY: -10 }}
+          transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+          className="relative perspective-1000 hidden lg:block"
+        >
+          <div className="relative rounded-2xl border border-white/10 bg-slate-900/50 p-2 shadow-2xl backdrop-blur-3xl transform hover:rotate-y-0 transition-transform duration-700">
+            <div className="bg-slate-950 rounded-xl p-8 font-mono text-sm border border-white/5 overflow-hidden">
+              <div className="flex gap-2 mb-6">
+                <div className="w-3 h-3 rounded-full bg-red-500/30" />
+                <div className="w-3 h-3 rounded-full bg-yellow-500/30" />
+                <div className="w-3 h-3 rounded-full bg-green-500/30" />
+              </div>
+              <div className="space-y-4">
+                <div className="flex gap-4">
+                  <span className="text-slate-600">01</span>
+                  <span className="text-blue-400">bun run validate</span>
+                </div>
+                <div className="flex gap-4">
+                  <span className="text-slate-600">02</span>
+                  <span className="text-slate-400">--- Documentation Lint ---</span>
+                </div>
+                <div className="flex gap-4">
+                  <span className="text-slate-600">03</span>
+                  <span className="text-green-400 font-bold">[OK] Integrity verified</span>
+                </div>
+                <div className="flex gap-4">
+                  <span className="text-slate-600">04</span>
+                  <span className="text-slate-400">--- System Structure ---</span>
+                </div>
+                <div className="flex gap-4">
+                  <span className="text-slate-600">05</span>
+                  <span className="text-indigo-400">[OK] Strategy: Web + Mobile</span>
+                </div>
+                <div className="flex gap-4">
+                  <span className="text-slate-600">06</span>
+                  <span className="text-white">🚀 Initializing sprint_01...</span>
+                </div>
+              </div>
+            </div>
+            
+            {/* Floating UI Elements */}
+            <div className="absolute -top-6 -right-6 p-4 bg-blue-600 rounded-2xl shadow-2xl border border-white/20 animate-bounce">
+               <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
