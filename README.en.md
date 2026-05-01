@@ -19,6 +19,9 @@ git clone https://github.com/drivenexe/drivenexe-starter my-project
 cd my-project
 ```
 
+> **Automation Tip:** If you have the [GitHub CLI](https://cli.github.com/) installed, you can create your remote repository and perform the first push with:
+> `gh repo create my-project --public --source=. --remote=origin --push`
+
 ### 2. Initial Setup
 
 ```bash

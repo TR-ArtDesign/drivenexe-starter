@@ -63,6 +63,17 @@ If "Não":
 
 Quando finalizar, responda: **concluído**"
 
+### STEP 4.1 — REMOTE SETUP (OPCIONAL)
+"Deseja criar um repositório remoto automaticamente no GitHub?
+
+Se sim, você precisará da GitHub CLI (`gh`).
+
+1. Instale: `scoop install gh` (se não tiver)
+2. Autentique: `gh auth login`
+3. Crie o repo: `gh repo create meu-projeto --public --source=. --remote=origin --push`
+
+Responda: **remoto pronto** ou **pular**"
+
 ### STEP 5 — INSTALL
 "Execute:
 `bun install`
