@@ -28,11 +28,11 @@ Construir um sistema limpo, escalável e validado através de orquestração det
 
 Instruções semânticas para o agente. O agente interpreta e executa os comandos corretos por baixo.
 
-| Comando | Comportamento | Playwright (Testes) |
-| :--- | :--- | :--- |
-| `run feat` | Feature Branch Mode | Opcional, não bloqueia. Mantém velocidade. |
-| `run dev` | Development Mode | **Obrigatório** — Falha no teste = Stop. |
-| `run prod` | Production Mode | **Mandatório** — Zero tolerância a falhas. |
+| Comando | Comportamento | Rede / Porta | Playwright (Testes) |
+| :--- | :--- | :--- | :--- |
+| `run feat` | Feature Branch Mode | Localhost `:3001` | Opcional, não bloqueia. Mantém velocidade. |
+| `run dev` | Development Mode | Localhost `:3001` | **Obrigatório** — Falha no teste = Stop. |
+| `run prod` | Production Mode | VPN IP `10.10.0.47:3000` | **Mandatório** — Zero tolerância a falhas. |
 
 ---
 
