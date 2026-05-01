@@ -39,6 +39,7 @@ bun run validate
 ### 4. Using the SKILL
 
 The system is **assisted** via the `SKILL.md` file. Open it and follow the instructions for the commands:
+
 * `init`
 * `validate`
 * `sprint`
