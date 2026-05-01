@@ -63,6 +63,18 @@ O sistema é **assistido** via arquivo `SKILL.md`. Abra-o e siga as instruções
 
 ---
 
+## 🌳 Estratégia de Branches
+
+O DrivenEXE impõe uma separação clara entre **Produção** e **Desenvolvimento**:
+
+*   **`main`**: Branch de produção. **Regra:** Nunca contém a pasta `docs/`.
+*   **`dev`**: Branch de desenvolvimento. Contém código e documentação completa (`docs/`).
+*   **`feature/*`**: Branches de recursos. Devem sempre nascer da `dev`.
+
+Para mais detalhes sobre os modos de execução (`run feat`, `run dev`, `run prod`), consulte o arquivo [AGENTS.md](./AGENTS.md).
+
+---
+
 ## 🧠 Como Funciona
 
 O sistema segue o modelo de execução:
