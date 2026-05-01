@@ -59,7 +59,14 @@ export const translations = {
       rights: "© 2026 DrivenEXE por TR-ArtDesign. Todos os direitos reservados.",
       privacy: "Privacidade",
       terms: "Termos",
-      contact: "Contato"
+      contact: "Contato",
+      links: {
+        features: "Recursos",
+        workflow: "Fluxo",
+        philosophy: "Filosofia",
+        documentation: "Documentação",
+        releases: "Versões"
+      }
     }
   },
   en: {
@@ -122,7 +129,14 @@ export const translations = {
       rights: "© 2026 DrivenEXE by TR-ArtDesign. All rights reserved.",
       privacy: "Privacy",
       terms: "Terms",
-      contact: "Contact"
+      contact: "Contact",
+      links: {
+        features: "Features",
+        workflow: "Workflow",
+        philosophy: "Philosophy",
+        documentation: "Documentation",
+        releases: "Releases"
+      }
     }
   }
 };

@@ -15,9 +15,9 @@ export default function Footer({ t }) {
         <div>
           <h4 className="text-white font-bold mb-6">{t.product}</h4>
           <ul className="space-y-4 text-sm text-slate-500 font-medium">
-            <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
-            <li><a href="#workflow" className="hover:text-white transition-colors">Workflow</a></li>
-            <li><a href="#why" className="hover:text-white transition-colors">Philosophy</a></li>
+            <li><a href="#features" className="hover:text-white transition-colors">{t.links.features}</a></li>
+            <li><a href="#workflow" className="hover:text-white transition-colors">{t.links.workflow}</a></li>
+            <li><a href="#why" className="hover:text-white transition-colors">{t.links.philosophy}</a></li>
           </ul>
         </div>
 
@@ -25,8 +25,8 @@ export default function Footer({ t }) {
           <h4 className="text-white font-bold mb-6">{t.open_source}</h4>
           <ul className="space-y-4 text-sm text-slate-500 font-medium">
             <li><a href="https://github.com/TR-ArtDesign/drivenexe-starter" className="hover:text-white transition-colors">GitHub</a></li>
-            <li><a href="https://github.com/TR-ArtDesign/drivenexe-starter#readme" className="hover:text-white transition-colors">Documentation</a></li>
-            <li><a href="https://github.com/TR-ArtDesign/drivenexe-starter/releases" className="hover:text-white transition-colors">Releases</a></li>
+            <li><a href="https://github.com/TR-ArtDesign/drivenexe-starter#readme" className="hover:text-white transition-colors">{t.links.documentation}</a></li>
+            <li><a href="https://github.com/TR-ArtDesign/drivenexe-starter/releases" className="hover:text-white transition-colors">{t.links.releases}</a></li>
           </ul>
         </div>
       </div>
