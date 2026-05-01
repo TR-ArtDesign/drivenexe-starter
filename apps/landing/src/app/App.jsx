@@ -34,7 +34,7 @@ function App() {
           <HowItWorks t={t.workflow} />
           <Difference t={t.difference} />
         </main>
-        <Footer />
+        <Footer t={t.footer} />
       </div>
     </div>
   )

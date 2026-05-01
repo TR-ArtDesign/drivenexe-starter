@@ -9,7 +9,7 @@ export const translations = {
     },
     hero: {
       badge: "DRIVENEXE 1.0",
-      headline_1: "Pare de começar",
+      headline_1: "Não comece",
       headline_2: "do zero.",
       subheadline: "DrivenEXE é o orquestrador para engenheiros de alta performance. Uma fundação estruturada e orquestrada que impõe validação e escala desde o primeiro dia.",
       cta_primary: "Começar com estrutura",
@@ -50,6 +50,15 @@ export const translations = {
       headline_accent: "É um sistema operacional.",
       desc: "O DrivenEXE não fica apenas parado na sua pasta. Ele vive com seu projeto, guiando seus sprints, validando sua documentação e garantindo que a fundação construída hoje permaneça inabalável daqui a seis meses.",
       cta: "Deploy com DrivenEXE"
+    },
+    footer: {
+      slogan: "Construindo a próxima geração de fundações de software. <br /> Orquestrado para times de engenharia de elite.",
+      product: "Produto",
+      open_source: "Open Source",
+      rights: "© 2026 DrivenEXE por TR-ArtDesign. Todos os direitos reservados.",
+      privacy: "Privacidade",
+      terms: "Termos",
+      contact: "Contato"
     }
   },
   en: {
@@ -103,6 +112,15 @@ export const translations = {
       headline_accent: "It's an operational system.",
       desc: "DrivenEXE doesn't just sit in your folder. It lives with your project, guiding your sprints, validating your documentation, and ensuring that the foundation you built today remains unshakeable six months from now.",
       cta: "Deploy with DrivenEXE"
+    },
+    footer: {
+      slogan: "Building the next generation of software foundations. <br /> Orchestrated for elite engineering teams.",
+      product: "Product",
+      open_source: "Open Source",
+      rights: "© 2026 DrivenEXE by TR-ArtDesign. All rights reserved.",
+      privacy: "Privacy",
+      terms: "Terms",
+      contact: "Contact"
     }
   }
 };

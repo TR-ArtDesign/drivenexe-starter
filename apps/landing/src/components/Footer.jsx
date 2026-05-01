@@ -1,4 +1,4 @@
-export default function Footer() {
+export default function Footer({ t }) {
   return (
     <footer className="py-20 border-t border-white/5 bg-slate-950">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
@@ -9,14 +9,11 @@ export default function Footer() {
             </div>
             <span className="text-lg font-bold tracking-tighter text-white">DrivenEXE</span>
           </div>
-          <p className="text-slate-500 max-w-sm font-medium">
-            Building the next generation of software foundations. <br />
-            Orchestrated for elite engineering teams.
-          </p>
+          <p className="text-slate-500 max-w-sm font-medium" dangerouslySetInnerHTML={{ __html: t.slogan }} />
         </div>
         
         <div>
-          <h4 className="text-white font-bold mb-6">Product</h4>
+          <h4 className="text-white font-bold mb-6">{t.product}</h4>
           <ul className="space-y-4 text-sm text-slate-500 font-medium">
             <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
             <li><a href="#workflow" className="hover:text-white transition-colors">Workflow</a></li>
@@ -25,7 +22,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="text-white font-bold mb-6">Open Source</h4>
+          <h4 className="text-white font-bold mb-6">{t.open_source}</h4>
           <ul className="space-y-4 text-sm text-slate-500 font-medium">
             <li><a href="https://github.com/TR-ArtDesign/drivenexe-starter" className="hover:text-white transition-colors">GitHub</a></li>
             <li><a href="https://github.com/TR-ArtDesign/drivenexe-starter#readme" className="hover:text-white transition-colors">Documentation</a></li>
@@ -36,11 +33,12 @@ export default function Footer() {
       
       <div className="max-w-7xl mx-auto px-6 mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="text-xs text-slate-600 font-medium uppercase tracking-widest">
-          © 2026 DrivenEXE by TR-ArtDesign. All rights reserved.
+          {t.rights}
         </div>
         <div className="flex gap-8 text-xs text-slate-600 font-medium uppercase tracking-widest">
-          <a href="#" className="hover:text-white transition-colors">Privacy</a>
-          <a href="#" className="hover:text-white transition-colors">Terms</a>
+          <a href="#" className="hover:text-white transition-colors">{t.privacy}</a>
+          <a href="#" className="hover:text-white transition-colors">{t.terms}</a>
+          <a href="#" className="hover:text-white transition-colors">{t.contact}</a>
         </div>
       </div>
     </footer>
