@@ -2,10 +2,10 @@
 
 ## 🎯 What is this?
 
-This repository is a structured foundation to bootstrap projects with consistency, validation, and scalability.
+This repository is a structured and **orchestrated** foundation to bootstrap projects with consistency, validation, and scalability.
 
 ⚠️ This is NOT a product.
-It is a reusable system foundation.
+It is a reusable and **guided** system foundation.
 
 ---
 
@@ -14,12 +14,12 @@ It is a reusable system foundation.
 ### 1. Starter Installation
 
 ```bash
-# Clone the repository
+# Clone the repository from your Git provider (GitHub, GitLab, Bitbucket, etc.)
 git clone https://github.com/drivenexe/drivenexe-starter my-project
 cd my-project
 ```
 
-> **Automation Tip:** If you have the [GitHub CLI](https://cli.github.com/) installed, you can create your remote repository and perform the first push with:
+> **Orchestration Tip:** If you use the [GitHub CLI](https://cli.github.com/) (as an example tool), you can speed up the remote repository creation with:
 > `gh repo create my-project --public --source=. --remote=origin --push`
 
 ### 2. Initial Setup
@@ -38,7 +38,7 @@ bun run validate
 
 ### 4. Using the SKILL
 
-The system is guided via the `SKILL.md` file. Open it and follow the instructions for the commands:
+The system is **assisted** via the `SKILL.md` file. Open it and follow the instructions for the commands:
 * `init`
 * `validate`
 * `sprint`

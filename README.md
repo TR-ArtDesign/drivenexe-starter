@@ -2,10 +2,10 @@
 
 ## 🎯 O que é isso?
 
-Este repositório é uma base estruturada para iniciar projetos com consistência, validação e escalabilidade.
+Este repositório é uma base estruturada e **orquestrada** para iniciar projetos com consistência, validação e escalabilidade.
 
 ⚠️ Isso NÃO é um produto.
-É um sistema de fundação reutilizável.
+É um sistema de fundação reutilizável e **guiado**.
 
 ---
 
@@ -14,12 +14,12 @@ Este repositório é uma base estruturada para iniciar projetos com consistênci
 ### 1. Instalação do Starter
 
 ```bash
-# Clone o repositório
+# Clone o repositório do seu provedor Git (GitHub, GitLab, Bitbucket, etc.)
 git clone https://github.com/drivenexe/drivenexe-starter meu-projeto
 cd meu-projeto
 ```
 
-> **Dica de Automação:** Se você tem a [GitHub CLI](https://cli.github.com/) instalada, pode criar seu repositório remoto e fazer o primeiro push com:
+> **Dica de Orquestração:** Se você utiliza a [GitHub CLI](https://cli.github.com/) (como exemplo de ferramenta), pode agilizar a criação do repositório remoto com:
 > `gh repo create meu-projeto --public --source=. --remote=origin --push`
 
 ### 2. Configuração Inicial
@@ -38,7 +38,7 @@ bun run validate
 
 ### 4. Utilização da SKILL
 
-O sistema é guiado via arquivo `SKILL.md`. Abra-o e siga as instruções para os comandos:
+O sistema é **assistido** via arquivo `SKILL.md`. Abra-o e siga as instruções para os comandos:
 * `init`
 * `validate`
 * `sprint`

@@ -59,20 +59,26 @@ If "Não":
 
 ### STEP 4 — CLONE TEMPLATE
 "Execute no terminal da sua IDE:
-`git clone https://github.com/drivenexe/drivenexe-starter .`
+`git clone <REPO_URL> .` (Substitua pela URL do seu provedor Git)
 
 Quando finalizar, responda: **concluído**"
 
-### STEP 4.1 — REMOTE SETUP (OPCIONAL)
-"Deseja criar um repositório remoto automaticamente no GitHub?
+---
 
-Se sim, você precisará da GitHub CLI (`gh`).
+### STEP 4.1 — REMOTE SETUP (OPCIONAL/ASSISTIDO)
+"Deseja configurar o repositório remoto agora?
 
-1. Instale: `scoop install gh` (se não tiver)
-2. Autentique: `gh auth login`
-3. Crie o repo: `gh repo create meu-projeto --public --source=. --remote=origin --push`
+**Opção A: Manual (Qualquer provedor Git)**
+1. Crie o repo no GitHub, GitLab, Bitbucket, etc.
+2. `git remote add origin <URL>`
+3. `git push -u origin main`
+
+**Opção B: Orquestrado (Exemplo via GitHub CLI)**
+1. `gh repo create meu-projeto --public --source=. --remote=origin --push`
 
 Responda: **remoto pronto** ou **pular**"
+
+---
 
 ### STEP 5 — INSTALL
 "Execute:
@@ -132,7 +138,7 @@ Verificando:
 * Consistência de comandos (Bun)
 * Aderência ao AGENTS.md
 
-(Aguarde a análise estruturada)"
+(Aguarde a análise assistida)"
 
 ---
 
