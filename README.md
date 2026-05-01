@@ -21,3 +21,9 @@ bun run test:e2e
 ```
 
 npm is not required.
+
+## Tipos de projeto suportados
+
+* Web → testes com Playwright
+* Mobile → testes com Maestro
+* Multiplataforma → ambos separados

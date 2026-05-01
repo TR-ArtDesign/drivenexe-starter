@@ -65,6 +65,19 @@ const { errors, warnings } = lintDocs(docsDir);
 console.log('-------------------------');
 console.log(`Summary: ${errors} errors, ${warnings} warnings`);
 
+
+console.log('\n--- System Structure Validation ---');
+const testsDir = path.join(__dirname, '..', 'tests');
+const hasWeb = fs.existsSync(path.join(testsDir, 'web')) && fs.readdirSync(path.join(testsDir, 'web')).length > 0;
+const hasMobile = fs.existsSync(path.join(testsDir, 'mobile', 'flows')) && fs.readdirSync(path.join(testsDir, 'mobile', 'flows')).length > 0;
+
+if (!hasWeb && !hasMobile) {
+  console.error('[ERROR] No testing strategy found. Ensure tests/web/ or tests/mobile/flows/ is populated.');
+  process.exit(1);
+} else {
+  console.log(`[OK] Testing strategy detected: ${hasWeb ? 'Web ' : ''}${hasMobile ? 'Mobile' : ''}`);
+}
+
 if (errors > 0) {
   process.exit(1);
 }
