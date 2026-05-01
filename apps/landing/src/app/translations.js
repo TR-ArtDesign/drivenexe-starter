@@ -79,7 +79,8 @@ export const translations = {
         headline: "Por que fazemos assim.",
         subheadline: "Nossa crença em estruturas rígidas para permitir criatividade fluida.",
         p1: "Acreditamos que a liberdade criativa de um engenheiro floresce quando as fundações são sólidas e inquestionáveis.",
-        p2: "O DrivenEXE foi construído sob o princípio de 'Opiniated by Design'. Tomamos as decisões difíceis de estrutura para que você não precise."
+        p2: "O DrivenEXE foi construído sob o princípio de 'Opiniated by Design'. Tomamos as decisões difíceis de estrutura para que você não precise.",
+        quote: "A estrutura não limita o engenheiro; ela o liberta das trivialidades para focar na inovação."
       },
       releases: {
         title: "Versões e Atualizações | DrivenEXE",
@@ -91,12 +92,19 @@ export const translations = {
       privacy: {
         title: "Privacidade | DrivenEXE",
         headline: "Sua privacidade importa.",
-        content: "O DrivenEXE é um projeto focado em ferramentas de desenvolvimento. Não coletamos dados pessoais através do sistema orquestrador."
+        content: "O DrivenEXE é um projeto focado em ferramentas de desenvolvimento. Não coletamos dados pessoais através do sistema orquestrador.",
+        p_extra: "No DrivenEXE, priorizamos a transparência técnica sobre a coleta de dados. Como uma ferramenta de desenvolvimento local, nosso compromisso é com a integridade do seu código, não com o rastreamento do seu comportamento.",
+        cookies_title: "Uso de Cookies",
+        cookies_p: "Este site utiliza apenas cookies essenciais para o funcionamento técnico (como a preferência de idioma), sem qualquer rastreamento de terceiros."
       },
       terms: {
         title: "Termos de Uso | DrivenEXE",
         headline: "Uso do Software.",
-        content: "DrivenEXE é distribuído sob licença MIT. Você é livre para usar, modificar e distribuir, mantendo os créditos originais."
+        content: "DrivenEXE é distribuído sob licença MIT. Você é livre para usar, modificar e distribuir, mantendo os créditos originais.",
+        responsibility_title: "Responsabilidade",
+        responsibility_p: "O software é fornecido 'como está', sem garantias de qualquer tipo. O uso da estrutura DrivenEXE é de total responsabilidade do desenvolvedor que a implementa em seus sistemas.",
+        contribution_title: "Contribuição",
+        contribution_p: "Como um projeto focado em open source, encorajamos o uso e a melhoria constante do sistema pela comunidade."
       }
     }
   },
@@ -180,7 +188,8 @@ export const translations = {
         headline: "Why we do it this way.",
         subheadline: "Our belief in rigid structures to allow for fluid creativity.",
         p1: "We believe an engineer's creative freedom flourishes when foundations are solid and unquestionable.",
-        p2: "DrivenEXE was built on the 'Opinionated by Design' principle. We make the tough structure decisions so you don't have to."
+        p2: "DrivenEXE was built on the 'Opinionated by Design' principle. We make the tough structure decisions so you don't have to.",
+        quote: "Structure doesn't limit the engineer; it frees them from trivialities to focus on innovation."
       },
       releases: {
         title: "Releases and Updates | DrivenEXE",
@@ -192,12 +201,19 @@ export const translations = {
       privacy: {
         title: "Privacy | DrivenEXE",
         headline: "Your privacy matters.",
-        content: "DrivenEXE is a developer tools focused project. We do not collect personal data through the orchestrator system."
+        content: "DrivenEXE is a developer tools focused project. We do not collect personal data through the orchestrator system.",
+        p_extra: "At DrivenEXE, we prioritize technical transparency over data collection. As a local development tool, our commitment is to the integrity of your code, not tracking your behavior.",
+        cookies_title: "Cookie Usage",
+        cookies_p: "This site uses only essential technical cookies (such as language preference), without any third-party tracking."
       },
       terms: {
         title: "Terms of Use | DrivenEXE",
         headline: "Software Usage.",
-        content: "DrivenEXE is distributed under the MIT license. You are free to use, modify and distribute, keeping original credits."
+        content: "DrivenEXE is distributed under the MIT license. You are free to use, modify and distribute, keeping original credits.",
+        responsibility_title: "Responsibility",
+        responsibility_p: "The software is provided 'as is', without warranty of any kind. Use of the DrivenEXE framework is the sole responsibility of the developer who implements it in their systems.",
+        contribution_title: "Contribution",
+        contribution_p: "As an open-source focused project, we encourage constant use and improvement of the system by the community."
       }
     }
   }
