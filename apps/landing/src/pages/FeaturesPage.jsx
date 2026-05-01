@@ -11,7 +11,7 @@ export default function FeaturesPage({ t }) {
 
   return (
     <PageLayout title={t.title} headline={t.headline} subheadline={t.subheadline}>
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
         {items.map((item, i) => (
           <Link to={item.path} key={i} className="block p-10 rounded-3xl bg-slate-900/50 border border-white/5 hover:bg-slate-900 hover:border-indigo-500/30 transition-all cursor-pointer">
             <h3 className="text-2xl font-bold text-white mb-4 tracking-tight">{item.title}</h3>
