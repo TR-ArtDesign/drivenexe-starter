@@ -1,5 +1,6 @@
 export const translations = {
   pt: {
+    title: "DrivenEXE | Não comece do zero.",
     nav: {
       philosophy: "Filosofia",
       features: "Recursos",
@@ -62,6 +63,7 @@ export const translations = {
     }
   },
   en: {
+    title: "DrivenEXE | Stop starting from scratch.",
     nav: {
       philosophy: "Philosophy",
       features: "Features",

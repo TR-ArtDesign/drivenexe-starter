@@ -12,6 +12,10 @@ function App() {
   const [lang, setLang] = useState('pt');
   const t = translations[lang];
 
+  useEffect(() => {
+    document.title = t.title;
+  }, [lang, t.title]);
+
   const toggleLang = () => {
     setLang(prev => prev === 'pt' ? 'en' : 'pt');
   };
