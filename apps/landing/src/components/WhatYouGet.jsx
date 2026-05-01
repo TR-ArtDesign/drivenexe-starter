@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-
 const items = [
   {
     title: "Structured Foundation",
@@ -27,7 +25,7 @@ export default function WhatYouGet() {
   return (
     <section id="features" className="py-32 bg-slate-900/20">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-20">
+        <div className="text-center mb-20 animate-fade-up">
           <h2 className="text-4xl font-bold text-white mb-6 tracking-tighter">Everything you need. <br />Nothing you don't.</h2>
           <p className="text-slate-500 max-w-xl mx-auto text-lg font-medium">
             We removed the boilerplate and focused on the orchestration. 
@@ -37,10 +35,10 @@ export default function WhatYouGet() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {items.map((item, index) => (
-            <motion.div 
+            <div 
               key={index}
-              whileHover={{ y: -5 }}
-              className="p-8 rounded-3xl bg-slate-900/50 border border-white/5 hover:bg-slate-900 transition-all group"
+              className="p-8 rounded-3xl bg-slate-900/50 border border-white/5 hover:bg-slate-900 hover:-translate-y-2 transition-all duration-300 group animate-fade-up"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="w-12 h-12 rounded-2xl bg-blue-600/10 flex items-center justify-center text-blue-500 mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
                 {item.icon}
@@ -49,7 +47,7 @@ export default function WhatYouGet() {
               <p className="text-sm text-slate-500 leading-relaxed font-medium">
                 {item.description}
               </p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

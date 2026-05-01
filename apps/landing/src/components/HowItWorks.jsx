@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-
 const steps = [
   {
     num: "01",
@@ -22,7 +20,7 @@ export default function HowItWorks() {
   return (
     <section id="workflow" className="py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-3 gap-12 relative">
+        <div className="grid lg:grid-cols-3 gap-12 relative animate-fade-up">
           {/* Connector Line */}
           <div className="absolute top-12 left-0 w-full h-[1px] bg-gradient-to-r from-blue-500/0 via-blue-500/20 to-blue-500/0 hidden lg:block" />
           
