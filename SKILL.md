@@ -71,19 +71,14 @@ Quando finalizar, responda: **concluído**"
 
 ---
 
-### STEP 4.1 — REMOTE SETUP (OPCIONAL/ASSISTIDO)
-
-"Deseja configurar o repositório remoto agora?
-
-### Opção A: Manual (Qualquer provedor Git)
-
-1. Crie o repo no GitHub, GitLab, Bitbucket, etc.
-2. `git remote add origin <URL>`
-3. `git push -u origin main`
-
-### Opção B: Orquestrado (Exemplo via GitHub CLI)
+### Opção A: Orquestrado (Exemplo via GitHub CLI)
 
 1. `gh repo create meu-projeto --public --source=. --remote=origin --push`
+2. `git branch -m main dev` (Define a branch atual como dev)
+3. `git checkout -b main` (Cria a branch de produção)
+4. `git rm -r docs` (Remove documentos da produção)
+5. `git commit -m "prod: sync main with production rules (removed docs/)"`
+6. `git push origin main dev`
 
 Responda: **remoto pronto** ou **pular**"
 
