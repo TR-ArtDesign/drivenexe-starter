@@ -9,7 +9,7 @@ export default function WorkflowPage({ t }) {
 
   return (
     <PageLayout title={t.title} headline={t.headline} subheadline={t.subheadline}>
-      <div className="space-y-12">
+      <div className="max-w-4xl mx-auto space-y-12">
         {steps.map((step, i) => (
           <div key={i} className="flex gap-8 p-10 rounded-3xl bg-slate-900/30 border border-white/5 items-start">
             <div className="text-4xl font-bold text-blue-600/50">{step.num}</div>

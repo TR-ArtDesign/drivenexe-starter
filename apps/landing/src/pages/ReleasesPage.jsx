@@ -3,7 +3,7 @@ import PageLayout from './PageLayout.jsx';
 export default function ReleasesPage({ t }) {
   return (
     <PageLayout title={t.title} headline={t.headline} subheadline={t.subheadline}>
-      <div className="space-y-8">
+      <div className="max-w-4xl mx-auto space-y-8">
         <div className="p-10 rounded-3xl bg-slate-900/50 border border-white/5">
           <div className="flex justify-between items-center mb-6">
             <h3 className="text-2xl font-bold text-white tracking-tight">{t.v1_title}</h3>
