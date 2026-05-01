@@ -7,10 +7,10 @@ import Difference from '../components/Difference.jsx';
 export default function Home({ t }) {
   return (
     <>
-      <Hero t={t.hero} />
-      <WhyExists t={t.why} />
-      <WhatYouGet t={t.features} />
-      <HowItWorks t={t.workflow} />
+      <Hero t={t.pages.home.hero} />
+      <WhyExists t={t.pages.home.why} />
+      <WhatYouGet t={t.pages.features} />
+      <HowItWorks t={t.pages.workflow} />
       <Difference t={t.difference} />
     </>
   );

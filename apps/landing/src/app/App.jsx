@@ -37,7 +37,7 @@ function App() {
           <Navbar t={t.nav} toggleLang={toggleLang} lang={lang} />
           <main>
             <Routes>
-              <Route path="/" element={<Home t={t.pages.home} />} />
+              <Route path="/" element={<Home t={t} />} />
               <Route path="/features" element={<FeaturesPage t={t.pages.features} />} />
               <Route path="/workflow" element={<WorkflowPage t={t.pages.workflow} />} />
               <Route path="/philosophy" element={<PhilosophyPage t={t.pages.philosophy} />} />

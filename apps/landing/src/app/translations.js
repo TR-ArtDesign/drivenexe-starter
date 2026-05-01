@@ -23,6 +23,12 @@ export const translations = {
         releases: "Versões"
       }
     },
+    difference: {
+      headline: "Não é um template.",
+      headline_accent: "É um sistema operacional.",
+      desc: "O DrivenEXE não fica apenas parado na sua pasta. Ele vive com seu projeto, guiando seus sprints, validando sua documentação e garantindo que a fundação construída hoje permaneça inabalável daqui a seis meses.",
+      cta: "Deploy com DrivenEXE"
+    },
     pages: {
       home: {
         hero: {
@@ -117,6 +123,12 @@ export const translations = {
         documentation: "Documentation",
         releases: "Releases"
       }
+    },
+    difference: {
+      headline: "It's not a template.",
+      headline_accent: "It's an operational system.",
+      desc: "DrivenEXE doesn't just sit in your folder. It lives with your project, guiding your sprints, validating your documentation, and ensuring that the foundation you built today remains unshakeable six months from now.",
+      cta: "Deploy with DrivenEXE"
     },
     pages: {
       home: {
