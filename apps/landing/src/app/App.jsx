@@ -11,6 +11,11 @@ import PrivacyPage from '../pages/PrivacyPage.jsx';
 import TermsPage from '../pages/TermsPage.jsx';
 import { translations } from './translations.js';
 
+import StructuredFoundationPage from '../pages/StructuredFoundationPage.jsx';
+import NativeValidationPage from '../pages/NativeValidationPage.jsx';
+import GuidedExecutionPage from '../pages/GuidedExecutionPage.jsx';
+import MultiPlatformPage from '../pages/MultiPlatformPage.jsx';
+
 function App() {
   const [lang, setLang] = useState('pt');
   const t = translations[lang];
@@ -39,6 +44,10 @@ function App() {
             <Routes>
               <Route path="/" element={<Home t={t} />} />
               <Route path="/features" element={<FeaturesPage t={t.pages.features} />} />
+              <Route path="/features/structured-foundation" element={<StructuredFoundationPage />} />
+              <Route path="/features/native-validation" element={<NativeValidationPage />} />
+              <Route path="/features/guided-execution" element={<GuidedExecutionPage />} />
+              <Route path="/features/multi-platform" element={<MultiPlatformPage />} />
               <Route path="/workflow" element={<WorkflowPage t={t.pages.workflow} />} />
               <Route path="/philosophy" element={<PhilosophyPage t={t.pages.philosophy} />} />
               <Route path="/releases" element={<ReleasesPage t={t.pages.releases} />} />
